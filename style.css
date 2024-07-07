@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background-color: hsl(216, 55%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }  
+  ul{
+    list-style: none;
+  }
+  img {
+    display: block;
+}
+  section{
+    width: 100%;
+    max-width: 350px;
+    padding: 30px;
+    background-color: hsl(214, 50%, 16%);
+    border-radius: 25px;
+}
+.imgs {
+    position: relative;
+    display: inline-block;
+}
+.imgs  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(180, 100%, 53%, 0.4);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+.imgs  .overlay img{
+    width: 50px;
+}
+img.img-equilibrium {
+    width: 100%;
+    border-radius: 10px;
+   
+}
+.imgs  .overlay:hover{
+opacity: 1;
+}
+section h1 {
+    line-height: 3;
+    font-weight: 400;
+    transition: all .5s;
+    cursor: pointer;
+}
+section h1:hover{
+    color:  hsl(180, 100%, 53%);
+
+}
+.text{
+    color: hsl(216, 46%, 69%);
+    
+}
+.item{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;  
+ margin: 20px 0;
+ border-bottom: 1px solid hsla(0, 0%, 97%, 0.1);
+    padding-bottom: 10px;
+ 
+}
+.item ul{
+    display: flex;
+    align-items: center;
+}
+.item li{
+    padding-right: 5px;
+}
+.ethereum{
+    color:  hsl(180, 100%, 53%); 
+    font-weight: 400;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.footer img{
+    width: 40px;
+    height: 40px;
+    /* object-fit: cover; */
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.footer p{
+    margin-left: 20px;
+}
+.footer p a{
+    color: white;
+    cursor: pointer;
+}
+.footer p a:hover {
+    color:  hsl(180, 100%, 53%); 
+}
